@@ -1,4 +1,5 @@
-function customerListCtrl($scope) {
+function CustomerListCtrl($scope, $http) {
+
     $scope.customers = [
         {id:'83124', name:'徐少阳先生', status:'求租', area:'静安寺', size:'2室1厅1卫', type:'A类', tel:'13900000000'},
         {id:'83456', name:'廖青',   status:'求购', area:'国际利都城', size:'2室2厅2卫', type:'Ｂ类', tel:'65989743'},
@@ -10,8 +11,14 @@ function customerListCtrl($scope) {
         {id:'43434', name:'赵阳',   status:'求购', area:'静安－国际丽都城', size:'2室2厅2卫', type:'Ｃ类', tel:'13657890987'},
         {id:'34433', name:'匡前阳', status:'求购', area:'静安－曹家渡', size:'2室2厅2卫', type:'Ｃ类', tel:'13657890987'}
     ];
+
+    $scope.say = function() {
+        // alert(1);
+    };
 };
-customerListCtrl.$inject = ['$scope'];
+
+
+CustomerListCtrl.$inject = ['$scope', '$http'];
 
 /*function PhoneListCtrl($scope, $http) {
     $http.get("phones/phonelist.json").success(function(data){

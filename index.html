@@ -41,10 +41,10 @@
 	                        <div class="btn to_update">&nbsp;</div>
 	                    </header>
 	            
-	                    <section class="listWrap" ng-controller="customerListCtrl">
+	                    <section class="listWrap" ng-controller="CustomerListCtrl">
 	                        <ul class="main_list">
 	                            <li class="clearfix" ng-repeat="customer in customers | filter:category" id="{{customer.id}}">
-	                                <span class="itemName">{{ customer.name }}</span>
+	                                <span class="itemName" ng-click="say();">{{ customer.name }}</span>
 	                                <span class="summary">{{ customer.area}}，{{ customer.size}}</span>
 	                            </li>
                             </ul>
