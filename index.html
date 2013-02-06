@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" ng-app="angular_demo">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Demo</title>
+  <script src="components/angular/angular.js"></script>
+  <script src="components/underscore/underscore.js"></script>
+  <script src="components/angular-underscore/angular-underscore.js"></script>
+  <script src="js/controllers.js"></script>
+  
+  <script type="text/javascript">
+    angular.module('angular_demo', ['angular-underscore']);
+  </script>
+
+</head>
+<body ng-controller="phoneListCtrl">
+
+  {{status + " - " + inq_json.total_results}} 
+  <ul>
+    <li ng-repeat="inq in inq_json.inquiryList">
+      <p>{{inq.id + " - " + inq.name}}</p>
+    </li>
+  </ul>
+
+</body>
+</html>
