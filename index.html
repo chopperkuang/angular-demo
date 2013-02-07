@@ -17,7 +17,7 @@
         </script>
     </head>
 
-    <body>
+    <body ng-controller="CustomerListCtrl">
         <!-- begin: sidebar -->
         <div id="sidebar" class="sidebar">
             <ul class="sidebar_list">
@@ -41,11 +41,11 @@
 	                        <div class="btn to_update">&nbsp;</div>
 	                    </header>
 	            
-	                    <section class="listWrap" ng-controller="CustomerListCtrl">
+	                    <section class="listWrap">
 	                        <ul class="main_list">
-	                            <li class="clearfix" ng-click="my(customer.id)" ng-repeat="customer in customers | filter:category" id="{{customer.id}}">
-	                                <span class="itemName">{{ customer.name }}</span>
-	                                <span class="summary">{{ customer.area}}，{{ customer.size}}</span>
+	                            <li class="clearfix" ng-repeat="customer in customers" id="{{customer.inquiryId}}"  ng-click="call(customer.inquiryId)">
+	                                <span class="itemName">{{ customer.custName }}</span>
+	                                <span class="summary">{{ customer.districtName}}，{{ customer.countF + "房" + customer.countT + "厅" + customer.countW  + "卫" }}</span>
 	                            </li>
                             </ul>
 	                    </section>
@@ -60,9 +60,10 @@
 	            </div>
 	        </div>
         </div>
-        <!--section class="action">
+
+        <section class="action {{show}}">
             <p>
-                <a href="telto:13917062966" class="in_block">打电话</a>
+                <a href="telto:{{phoneNumber}}" class="in_block">打电话 </a>
                 <a href="telto:" class="in_block">发短信</a>
                 <a href="telto:" class="in_block">立即看</a>
             </p>
@@ -71,6 +72,12 @@
                 <a href="telto:" class="in_block">...</a>
             </p>
         </section>
+<<<<<<< HEAD
         <div id="mask"></div-->
+=======
+        <div id="mask  {{show}}" ></div>
+        
+        
+>>>>>>> d1f3c13cc350f524a8122a0d9fc28b0d3c8698a0
     </body>
 </html>
