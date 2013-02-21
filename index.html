@@ -51,10 +51,10 @@
 	                    </section>
 	            
 	                    <ul class="sub_nav_bottom clearfix">
-	                        <li class="current">最近</li>
-	                        <li>Ａ类</li>
-	                        <li>Ｂ类</li>
-	                        <li>Ｃ类</li>
+	                        <li class="current"><label><input type="radio" class="hidden" name="category" id="category_all" value="" ng-model="category">最近</label></li>
+	                        <li><input type="radio" name="category" value="A类" ng-model="category">Ａ类</li>
+	                        <li><input type="radio" name="category" value="B类" ng-model="category">Ｂ类</li>
+	                        <li><input type="radio" name="category" value="C类" ng-model="category">Ｃ类</li>
 	                    </ul>
 	                </div>
 	            </div>
@@ -72,8 +72,12 @@
                 <a href="telto:" class="in_block">...</a>
             </p>
         </section>
+<<<<<<< HEAD
+        <div id="mask"></div-->
+=======
         <div id="mask  {{show}}" ></div>
         
         
+>>>>>>> d1f3c13cc350f524a8122a0d9fc28b0d3c8698a0
     </body>
 </html>
