@@ -2,9 +2,9 @@
   "name": "angular_demo",
   "version": "1.0.0",
   "dependencies": {
-    "angular": "~1.0.4",
-    "angular-resource": "~1.0",
-    "underscore": "~1.4.4",
+    "angular": "latest",
+    "angular-resource": "latest",
+    "underscore": "latest",
     "angular-underscore": "https://github.com/floydsoft/angular-underscore.git"
   }
 }
