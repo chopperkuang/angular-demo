@@ -13,10 +13,25 @@
         <script src="js/app.js"></script>
         <script src="js/CustomerListController.js"></script>
         <script src="js/CustomerService.js"></script>
+        <script src="directives/dyCustList.js"></script>
         
     </head>
 
 <body>
-  <ng-view></ng-view>
+    <!-- begin: sidebar -->
+    <div id="sidebar" class="sidebar">
+        <ul class="sidebar_list">
+            <li>主页</li>
+            <li>设置</li>
+            <li>我的私客</li>
+            <li>售后通讯录</li>
+            <li>税费计算器</li>
+            <li>...</li>
+        </ul>
+    </div>
+
+    <ng-view></ng-view>    
+
+    
 </body>
 </html>

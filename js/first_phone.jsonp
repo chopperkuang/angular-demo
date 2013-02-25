@@ -1,0 +1,2 @@
+
+JSON_CALLBACK({"message":"","inquiryId":"110905115023DAD97839213E8039B19C","status":"ok","phones":[{"id":435728,"inquiryContactId":403630,"inquiryId":"110905115023DAD97839213E8039B19C","phoneNumber":"13900000001","maskedNumber":null,"status":0,"createdAt":1343594923540,"updatedAt":null,"createEmpNo":80001,"province":null,"city":null,"netWork":null,"sevencount":0,"custName":null,"office":false,"same":false,"message":null,"orgId":0,"sameOrgName":null,"sameEmpName":null,"inquiryTelExtNumber":null}]})

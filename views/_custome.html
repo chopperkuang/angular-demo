@@ -1,0 +1,4 @@
+<li class="clearfix" ng-repeat="customer in customers" id="{{customer.inquiryId}}"  ng-click="call(customer.inquiryId)">
+                            <span class="itemName">{{ customer.custName }}</span>
+                            <span class="summary">{{ customer.districtName}}，{{ customer.countF + "房" + customer.countT + "厅" + customer.countW  + "卫" }}</span>
+                        </li>

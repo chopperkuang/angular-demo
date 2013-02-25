@@ -1,17 +1,6 @@
-<!-- begin: sidebar -->
-<div id="sidebar" class="sidebar">
-    <ul class="sidebar_list">
-        <li>主页</li>
-        <li>设置</li>
-        <li>我的私客</li>
-        <li>售后通讯录</li>
-        <li>税费计算器</li>
-        <li>...</li>
-    </ul>
-</div>
-    
+   
 <!--- begin: list -->
-<div id="main" class="main" ng-controller="CustomerListController">
+<div id="main" class="main">
     <div class="container">
         <div class="pageWrap">
             <div class="page">
@@ -23,19 +12,16 @@
         
                 <section class="listWrap">
                     <ul class="main_list">
+                        <!-- <ng-include src="'views/_custome.html'"/> -->
                         <li class="clearfix" ng-repeat="customer in customers" id="{{customer.inquiryId}}"  ng-click="call(customer.inquiryId)">
                             <span class="itemName">{{ customer.custName }}</span>
                             <span class="summary">{{ customer.districtName}}，{{ customer.countF + "房" + customer.countT + "厅" + customer.countW  + "卫" }}</span>
                         </li>
+                        <!-- <dy-cust-list></dy-cust-list> -->
                     </ul>
                 </section>
         
-                <ul class="sub_nav_bottom clearfix">
-                    <li class="current">最近</li>
-                    <li>Ａ类</li>
-                    <li>Ｂ类</li>
-                    <li>Ｃ类</li>
-                </ul>
+                <ng-include src="'views/_subNav.html'"/> 
             </div>
         </div>
     </div>

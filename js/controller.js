@@ -3,6 +3,7 @@ function CustomerListCtrl($scope, $http) {
     
     $scope.show = "hidden";
 
+    console.log("run.");
     var api_myPrivate = "http://10.8.11.34:8090/api/app/myPrivate/83639?callback=JSON_CALLBACK";
     $http.jsonp(api_myPrivate).success(function(data) {
         $scope.customers = data.inquiryList;
